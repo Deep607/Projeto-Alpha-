@@ -1,0 +1,160 @@
+/* Reset de margens e preenchimento padrão */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: linear-gradient(to right, #FF5733, #6D1FF0); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, 'Helvetica Neue', arial, sans-serif;
+    background: black;
+    height: 10vh;
+  }
+  
+  .nav-list{
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 2px;
+    margin-left: 32px;
+    animation: navLinkFade 0.5 ease forwards;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  body {
+    background: linear-gradient(to bottom, #5d0985, #12473d);
+    
+  }
+  
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+      overflow-y: 100%;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width:  50vw;
+      height:  92vh;
+      background: black;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {  
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu .nav-list.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu .nav-list.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu .nav-list.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+  
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de fundo e cores gerais */
+.textos {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Alterado para coluna para centralizar no centro vertical */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #5d0985, #12473d);
+    color: #fff;
+    text-align: center;
+    padding: 0;
+}
+h1{
+font-size: 55px;
+}
+p{
+font-size: 25px;
+
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0; /* Adicione margem na parte inferior para separar dos direitos autorais */
+}
+
+.instagram, .twitter, .whatsapp {
+    height: 40px;
+    margin: 0 10px; /* Espaço entre os ícones das redes sociais */
+}
+
+.alpha {
+    font-size: 14px; /* Ajuste o tamanho da fonte do aviso de direitos autorais conforme necessário */
+    text-align: center; /* Centraliza o aviso de direitos autorais */
+}
+

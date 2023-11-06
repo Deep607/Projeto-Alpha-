@@ -1,0 +1,142 @@
+/* Reset de margens e preenchimento padrão */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de fundo e cores gerais */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #5d0985, #12473d);
+    color: #fff;
+    text-align: center;
+    padding: 0;
+}
+
+/* Container principal para centralizar conteúdo */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 20vh;
+
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.login-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+p{
+    font-size: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    width: 70%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 60%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1abc9c;
+}
+
+#registerModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.modal-content {
+    background: #fff;
+    width: 60%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+    font-size: 50px;
+}
+
+/* Estilos para a seção de texto */
+
+
+.logo {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+/* Estilos para a seção de texto */
+.textinho {
+    max-width: 1500px;
+    text-align: center;
+    padding: 1px;
+}
+.redes {
+    background-color: #00000018;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0; /* Ajuste o valor de acordo com a quantidade que você deseja que o conteúdo suba */
+    left: 0;
+    width: 100%;
+    top: 0 auto;
+}
+.instagram, .twitter, .whatsapp{
+    height: 40px;
+    margin-left: 10px;
+
+
+}

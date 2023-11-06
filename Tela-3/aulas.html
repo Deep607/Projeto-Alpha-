@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tela de video></title>
+    <link rel="stylesheet" type="text/css" href="aulas-styles.css">
+    <link rel="icon" href="/imagens/Logo.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="/Tela-1/inicial.html">ALPHA+</a> 
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="/Tela-1/inicial.html"><img src="/imagens/inicio.png" alt="INICIO">Início</a></li>
+        <li><a href="/Tela-2/perfil.html"><img src="/imagens/perfil.png" alt="PERFIL"> Perfil</a></li>
+        <li><a href="/Tela-3/cursos.html"><img src="/imagens/aulas.png" alt="AULAS"> Aulas</a></li>
+        <li><a href="/Tela-4/sobre.html"><img src="/imagens/sobrenos.png" alt="SOBRE NÓS"> Sobre Nós</a></li>
+        <li><a href="/"><img src="/imagens/eventos.png" alt="EVENTOS"> Eventos</a></li>
+        <li><a href="/index.html"><img src="/imagens/sair.png" alt="Sair"> Sair</a></li>
+      </ul>      
+    </nav>
+  </header>
+    <link rel="stylesheet" type="text/css" href="modal.css">
+</head>
+<body>
+  <div class="mp4">
+    <button class="abrirmodal" id="openModal">Abrir Conteudo do curso</button>
+    
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        
+        <h2>Conteudo do curso:</h2>
+        <ul>
+          <li><input type="checkbox" id="option1"> AULA 01 - Portugês Básico</li>
+          <li><input type="checkbox" id="option2"> AULA 02 - Portugês Básico</li>
+          <li><input type="checkbox" id="option3"> AULA 03 - Portugês Básico</li>
+          <li><input type="checkbox" id="option4"> AULA 04 - Portugês Básico</li>
+          <li><input type="checkbox" id="option5"> AULA 05 - Portugês Básico</li>
+          <li><input type="checkbox" id="option6"> AULA 06 - Portugês Básico</li>
+          <li><input type="checkbox" id="option7"> AULA 07 - Portugês Básico</li>
+        </ul>
+        <button class="fecharmodal" id="saveOptions">Fechar Conteudo do curso</button>
+      </div>
+    </div>
+  
+    <video id="video" src="/imagens/01 - Português Básico.mp4" width="700" height="700" preload controls loop style="display: none;" class="responsive-video"></video>
+    <video id="video" src="/imagens/02 - Português Básico.mp4" width="700" height="700" preload controls loop style="display: none;" class="responsive-video"></video>
+    <video id="video" src="/imagens/03 - Português Básico.mp4" width="700" height="700" preload controls loop style="display: none;" class="responsive-video"></video>
+    <video id="video" src="/imagens/04 - Português Básico.mp4" width="700" height="700" preload controls loop style="display: none;" class="responsive-video"></video>
+    <video id="video" src="/imagens/05 - Português Básico.mp4" width="700" height="700" preload controls loop style="display: none;" class="responsive-video"></video>
+    <video id="video" src="/imagens/06 - Português Básico.mp4" width="700" height="700" preload controls loop style="display: none;" class="responsive-video"></video>
+    <video id="video" src="/imagens/07 - Português Básico.mp4" width="700" height="700" preload controls loop style="display: none;" class="responsive-video"></video>
+
+    <script src="aulas-script.js"></script> 
+</body>
+</html>

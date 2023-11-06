@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #5d0985, #12473d);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background: linear-gradient(to right, #FF5733, #6D1FF0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  height: 53px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: black;
+  height: 10vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 2px;
+  margin-left: 32px;
+  animation: navLinkFade 0.5s ease forwards;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: white;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 10vh; /* Ajuste essa margem superior para evitar que a navegação seja ocultada pelo cabeçalho. */
+    right: 0;
+    width: 100%;
+    height: 90vh;
+    background: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    z-index: 3; /* Defina um z-index maior para o menu quando estiver visível */
+  }
+
+  .nav-list.active {
+    transform: translateX(0);
+  }
+
+  .mobile-menu {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    z-index: 2; /* Defina um z-index maior para o botão de hambúrguer */
+  }
+
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+    transition: 0.3s;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fotop {
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.imagem-centralizada {
+  display: block; /* Para centralizar a imagem */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.profile-box {
+  
+  width: 180px;
+  margin: 10px auto;
+  border-radius: 5px;
+  text-align: center;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 7px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0057b3;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.caixa {
+  background-color: #ffffff60;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px; /* Adicione esse espaçamento interno */
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  flex-basis: calc(50% - 20px); /* Largura inicial de cada caixa, 50% do contêiner menos a margem */
+  flex-grow: 1; /* Ocupa todo o espaço disponível */
+  box-sizing: border-box; /* Evita que as bordas afetem o dimensionamento */
+  margin: 15px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.caixa p a {
+  color: #000; /* Defina a cor de texto desejada */
+  text-decoration: underline; /* Adicione um sublinhado aos links */
+  font-size: 20px;
+}
