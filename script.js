@@ -70,6 +70,11 @@ $(document).ready(function() {
         }
 
         // Validação básica, você pode adicionar validações mais complexas aqui
+        if (password.length < 8) {
+            alert("A senha deve conter pelo menos 8 caracteres.");
+            return;
+
+        // Validação básica, você pode adicionar validações mais complexas aqui
         if (password !== confirmPassword) {
             alert("As senhas não coincidem.");
             return;
